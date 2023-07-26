@@ -43,7 +43,7 @@ include_once 'session.php';
         <!-- Button trigger modal -->
 
         <h1 class="text-center mt-5">Counselling History</h1>
-        <p class="text-center">The History will only display in between 30 days abu.</p>
+        <p class="text-center">The History will only display in between 30 days.</p>
         <?php
         if ($category == 'Client') {
             $currentDate = date('Y-m-d');
