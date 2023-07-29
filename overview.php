@@ -55,27 +55,27 @@ if ($category == 'Client') {
 
                                     <div class="card col-lg-12 mb-2" align="justify">
                                         <div class="card-body">
-                                            <p class='mb-1'><b><?php echo number_format($arrayMax[0], 3) ?>%</b> of respondent with potential of bipolar disorder experienced in <b><?php echo $arrayNameQues[$as[0]] ?></b></p>
+                                            <p class='mb-1'><b><?php echo number_format($arrayMax[0], 2) ?>%</b> of respondent with potential of bipolar disorder experienced in <b><?php echo $arrayNameQues[$as[0]] ?></b></p>
                                         </div>
                                     </div>
                                     <div class="card col-lg-12 mb-2" align="justify">
                                         <div class="card-body">
-                                            <p class='mb-1'><b><?php echo number_format($arrayMax[1], 3)  ?>%</b> of respondent with potential of bipolar disorder experienced in <b><?php echo $arrayNameQues[$as[1]] ?></b></p>
+                                            <p class='mb-1'><b><?php echo number_format($arrayMax[1], 2)  ?>%</b> of respondent with potential of bipolar disorder experienced in <b><?php echo $arrayNameQues[$as[1]] ?></b></p>
                                         </div>
                                     </div>
                                     <div class="card col-lg-12 mb-2" align="justify">
                                         <div class="card-body">
-                                            <p class='mb-1'><b><?php echo number_format($arrayMax[2], 3)  ?>%</b> of respondent with potential of bipolar disorder experienced in <b><?php echo $arrayNameQues[$as[2]] ?></b></p>
+                                            <p class='mb-1'><b><?php echo number_format($arrayMax[2], 2)  ?>%</b> of respondent with potential of bipolar disorder experienced in <b><?php echo $arrayNameQues[$as[2]] ?></b></p>
                                         </div>
                                     </div>
                                     <div class="card col-lg-12 mb-2" align="justify">
                                         <div class="card-body">
-                                            <p class='mb-1'><b><?php echo number_format($arrayMax[3], 3)  ?>%</b> of respondent with potential of bipolar disorder experienced in <b><?php echo $arrayNameQues[$as[3]] ?></b></p>
+                                            <p class='mb-1'><b><?php echo number_format($arrayMax[3], 2)  ?>%</b> of respondent with potential of bipolar disorder experienced in <b><?php echo $arrayNameQues[$as[3]] ?></b></p>
                                         </div>
                                     </div>
                                     <div class="card col-lg-12 mb-2" align="justify">
                                         <div class="card-body">
-                                            <p class='mb-1'><b><?php echo number_format($arrayMax[4], 3) ?>%</b> of respondent with potential of bipolar disorder experienced in <b><?php echo $arrayNameQues[$as[4]] ?></b></p>
+                                            <p class='mb-1'><b><?php echo number_format($arrayMax[4], 2) ?>%</b> of respondent with potential of bipolar disorder experienced in <b><?php echo $arrayNameQues[$as[4]] ?></b></p>
                                         </div>
                                     </div>
 
