@@ -19,8 +19,9 @@ include_once 'session.php';
 
             <!-- Section: My projects -->
             <section class="mb-5 mt-5 text-center">
-                <h2 class="fw-bold mb-7 text-center" style="font-family: 'Arimo', sans-serif;font-family: 'Konkhmer Sleokchher', cursive;">Sistem
-                    Pengecaman Gejala Gangguan Bipolar</h2>
+                <h2 class="fw-bold mb-7 text-center" style="font-family: 'Arimo', sans-serif; font-family: 'Konkhmer Sleokchher', cursive;">
+                    <span style="color: black;">Bi</span><span style="color: #888;">Polars</span>
+                </h2>
                 <?php if ($contact == "") { ?>
                     <div class="alert alert-danger alert-dismissible fade show text-center mb-6" role="alert">
                         <h5>Your Profile is incomplete, please update your profile.</h5>
@@ -44,13 +45,14 @@ include_once 'session.php';
                             <div class="card-body hover-overlay ripple shadow-6-strong">
                                 <h5 class="card-title text-light">AI engine</h5>
                                 <p class="text-light">
-                                    <small>Finished <u>13.09.2021</u> for
-                                        <a href="" class="text-Light">Techify</a></small>
+                                    <small>Finished <u>13.06.2023</u> for
+                                        <a href="" class="text-Light">Final Year Project</a></small>
                                 </p>
-                                <p class="card-text text-light">
-                                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                                    placerat vulputate. Ut vulputate est non quam dignissim
-                                    elementum. Donec a ullamcorper diam.
+                                <p class="card-text text-light" align="justify">
+                                    Your go-to resource for recognizing bipolar disorder.
+                                    Access valuable information, self-assessment tools, and expert
+                                    guidance to identify the signs and find support on your journey
+                                    to well-being. You're not alone - take the first step today.
                                 </p>
                                 <a href="#!" class="btn btn-secondary btn-rounded">Read more</a>
                             </div>
@@ -64,20 +66,40 @@ include_once 'session.php';
 
                         <div class="card rounded-6 h-100 bg-dark ">
                             <div class="card-body text-light hover-overlay ripple shadow-6-strong">
-                                <h5 class="card-title text-light">FAQ</h5>
+                                <h5 class="card-title text-light">Objectives</h5>
                                 <p class="">
                                     <small>Last Updated on <u>29.04.2023</u></small>
                                 </p>
                                 <p class="card-text" align="justify">
-                                    Sistem Pengecaman Gejala Gangguan Bipolar adalah bertujuan untuk membantu pihak
-                                    kaunselor serta klien dalam mengenal pasti masalah kesihatan mental di dalam
-                                    kalangan pelajar dan kakitangan Universiti Kebangsaan Malaysia.
-                                    Sistem ini ditubuhkan dengan fasiliti seperti Ujian Bipolar, Tempahan Temujanji
-                                    bersama kaunselor dan juga dapat menghasilkan laporan ringkas dengan tujuan dapat
-                                    membantu para kaunselor untuk menganalisis klien dengan lebih mudah.
-
-
+                                    Bipolar System is a specialized platform
+                                    designed to support counselors and clients
+                                    at the National University of Malaysia in
+                                    identifying and addressing mental health
+                                    issues among students and staff. This user-friendly
+                                    system offers a range of valuable features, including
+                                    the Bipolar Test, enabling individuals to self-assess
+                                    and recognize potential bipolar disorder symptoms.
                                 </p>
+                                <p class="card-text" align="justify">
+                                    Moreover, the platform facilitates seamless appointment
+                                    booking with counselors, ensuring timely and personalized
+                                    support for those in need. It goes even further by empowering
+                                    counselors with the ability to generate concise reports,
+                                    streamlining the analysis process and enhancing the overall
+                                    counseling experience.
+                                </p>
+                                <p class="card-text" align="justify">
+                                    With its comprehensive tools and resources, the Bipolar
+                                    System aims to assist counselors in gaining deeper insights
+                                    into their clients' mental health concerns, ultimately leading
+                                    to more effective and targeted interventions. By fostering a
+                                    supportive and proactive environment, the platform strives to
+                                    improve the well-being and academic success of the university
+                                    community. Together, counselors and clients can work towards a
+                                    healthier and happier campus community at the National University
+                                    of Malaysia.
+                                </p>
+
 
                                 <a href="#!" class="btn btn-secondary btn-rounded">Read more</a>
                             </div>
