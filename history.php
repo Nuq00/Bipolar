@@ -22,7 +22,7 @@ include_once 'session.php';
         }
 
         /* Apply animation to cards */
-        .container {
+        .cont {
             animation: fadeIn 0.5s ease-in-out;
         }
     </style>
@@ -57,7 +57,7 @@ include_once 'session.php';
     }
     ?>
     <?php include_once 'navbar.php'; ?>
-    <div class=" container container-fluid">
+    <div class=" cont container-fluid">
         <!-- Button trigger modal -->
         <!-- Button trigger modal -->
 
