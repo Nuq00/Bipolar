@@ -7,7 +7,7 @@
 <head>
     <?php include 'head.php'; ?>
     <style>
-        /* Keyframes for fade-in animation */
+        /* Keyframes for fade-in animation s*/
         @keyframes fadeIn {
             0% {
                 opacity: 0;
