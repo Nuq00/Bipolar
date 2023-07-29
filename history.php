@@ -199,8 +199,13 @@ include_once 'session.php';
                     <p>Are you sure you want to proceed?</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn2">Delete for all</button>
-                    <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Delete for me</button>
+                    <?php if ($category == 'Client') { ?>
+                        <button type="button" class="btn btn-danger" id="confirmDeleteBtn2">Delete</button>
+                    <?php } else { ?>
+                        <button type="button" class="btn btn-danger" id="confirmDeleteBtn2">Delete for all</button>
+                        <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Delete for me</button>
+                    <?php } ?>
+
                     <button type="button" class="btn btn-secondary" id="cancelDeleteBtn" data-dismiss="modal">Cancel</button>
                 </div>
             </div>

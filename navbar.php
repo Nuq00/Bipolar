@@ -1,3 +1,5 @@
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark m-2 rounded-7 shadow-4-strong ">
     <div class="container-fluid px-4">
         <a class="navbar-brand" href="#">
@@ -13,9 +15,7 @@
                     <li class="nav-item">
                         <a class="nav-link dropdown-toggle" href="#" id="counselling" data-mdb-toggle="dropdown" aria-expanded="false">Counselling</a>
                         <ul class="dropdown-menu" aria-labelledby="counselling">
-                            <li><a class="dropdown-item" href="#">Counsellors</a></li>
-                            <li><a class="dropdown-item" href="#">Staffs</a></li>
-                            <li><a class="dropdown-item" href="#">Metntal Health Awareness</a></li>
+                            <li><a class="dropdown-item" href="awareness.php">Metntal Health Awareness</a></li>
                         </ul>
                     </li>
                 </div>
@@ -29,7 +29,7 @@
                                 <li>
                                     <hr class="dropdown-divider" />
                                 </li>
-                                <li><button class="dropdown-item" type="button">Feedback Form</button></li>
+                                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSdQXQnaqWFTuwf8cAo1eULAcJfdO5NMAgtD3WvbRMk-7hrtOw/viewform">Feedback Form</a></li>
                             </ul>
                         </li>
                     </div>
@@ -125,7 +125,7 @@
                                                 if (day === 0 || day === 6) {
                                                     input.setCustomValidity('Please choose a weekday');
                                                 } else if (selectedDate < minSelectableDate) {
-                                                    input.setCustomValidity('Please choose a date after ' + minSelectableDate.toLocaleDateString() +' which a week from now.');
+                                                    input.setCustomValidity('Please choose a date after ' + minSelectableDate.toLocaleDateString() + ' which a week from now.');
                                                 } else {
                                                     input.setCustomValidity('');
                                                 }

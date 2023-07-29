@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['bookingID'])) {
 
             $stmt = $conn->prepare("DELETE FROM booking WHERE fld_booking_ID = :bookingID");
             $stmt->bindParam(':bookingID', $bookingID);
-            $stmt->execute();
+            $stmt->execute();   
 
             echo 'success';
         } catch (PDOException $e) {

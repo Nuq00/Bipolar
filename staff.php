@@ -171,7 +171,7 @@ if (isset($_POST['update'])) {
             </div>
             <?php
             try {
-                $stmtStaff = $conn->prepare("SELECT * FROM user_data WHERE fld_category!='Client' AND fld_category!='Admin'");
+                $stmtStaff = $conn->prepare("SELECT * FROM user_data WHERE fld_category!='Client'");
                 $stmtStaff->execute();
                 $staffData = $stmtStaff->fetchAll(PDO::FETCH_ASSOC);
             } catch (PDOException $e) {
@@ -204,8 +204,11 @@ if (isset($_POST['update'])) {
                                 <td>
                                     <form method="post">
                                         <input type="hidden" name="user_id" value="<?php echo $staff['fld_userID']; ?>">
-                                        <button class="btn btn-sm btn-primary" name="edit-btn">Edit</button>
-                                        <button class="btn btn-sm btn-danger" name="rm-btn">Delete</button>
+                                        <?php if ($staff['fld_category'] != 'Admin') { ?>
+                                            <button class="btn btn-sm btn-primary" name="edit-btn">Edit</button>
+                                            <button class="btn btn-sm btn-danger" name="rm-btn">Delete</button>
+                                        <?php } ?>
+
                                     </form>
                                 </td>
                             </tr>
