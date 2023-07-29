@@ -76,6 +76,25 @@ if (isset($_POST['submit'])) {
 
 <head>
     <?php include_once 'head.php'; ?>
+    <style>
+        /* Keyframes for fade-in animation s*/
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply animation to cards */
+        .cont {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
 </head>
 
 <body>
@@ -107,7 +126,7 @@ if (isset($_POST['submit'])) {
 
     <?php include 'navbar.php';
     ?>
-    <div class="container-fluid">
+    <div class="container-fluid cont">
 
         <!-- This is just a disclaimer -->
         <div class="d-sm-flex align-items-center justify-content-between my-4">

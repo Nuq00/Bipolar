@@ -13,6 +13,25 @@ if ($category == 'Client') {
 <head>
     <?php include_once 'head.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Keyframes for fade-in animation s*/
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply animation to cards */
+        .cont {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
 
 </head>
 
@@ -22,7 +41,7 @@ if ($category == 'Client') {
     ?>
 
     <!-- Pills navs -->
-    <div class="container-fluid">
+    <div class="container-fluid cont">
         <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
             <li class="nav-item" role="presentation">
                 <a class="nav-link active" id="ex3-tab-1" data-mdb-toggle="pill" href="#ex3-pills-1" role="tab" aria-controls="ex3-pills-1" aria-selected="true">Overall Statistics</a>
