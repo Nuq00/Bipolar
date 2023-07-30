@@ -52,9 +52,10 @@ include_once 'session.php';
                             <th style="width:10px;">No.</th>
                             <th>Reference ID</th>
                             <?php if ($category != 'Client') {
-                                echo '<th> Client Matric Number</th>';
+                                echo '<th>Client Matric Number</th>';
+                                echo '<th>Name</th>';
                             } ?>
-                            <th>Questionnaire Name</th>
+                            <!-- <th>Name</th> -->
                             <th>Date</th>
                             <th>Time</th>
                             <th></th>
@@ -66,7 +67,7 @@ include_once 'session.php';
                         if ($category == 'Client') { ///client only
                             $count = 1;
                             foreach ($result as $rows) {
-
+                                
                                 $timestamp = $rows['fld_date'];
                                 $date = date("l, j F Y", strtotime($timestamp));
                                 $time = date("h:i A", strtotime($timestamp));
@@ -75,7 +76,7 @@ include_once 'session.php';
                                     <td class="text-center"><?php echo $count ?></td>
                                     <td><?php echo $rows['fld_result_ID'];
                                         $currentID = $rows['fld_result_ID']; ?></td>
-                                    <td><?php echo ($rows['fld_quiz_ID'] == 1) ? 'Bipolar Questionnaire' : 'Anxiety Questionnaire'; ?></td>
+                                    
                                     <td><?php echo $date; ?></td>
                                     <td><?php echo $time; ?></td>
                                     <td class="text-center">
@@ -89,6 +90,10 @@ include_once 'session.php';
 
                             $count = 1;
                             foreach ($result as $row) {
+                                $newID = $row['fld_user_ID'];
+                                $stmt4 = $conn->prepare("SELECT fld_username FROM user_data WHERE fld_userID = '$newID'");
+                                $stmt4->execute();
+                                $newID = $stmt4->fetch(PDO::FETCH_ASSOC);
                                 $timestamp = $row['fld_date'];
                                 $date = date("l, j F Y", strtotime($timestamp));
                                 $time = date("h:i A", strtotime($timestamp));
@@ -98,8 +103,8 @@ include_once 'session.php';
                                     <td><?php echo $row['fld_result_ID'];
                                         $currentID = $row['fld_result_ID']; ?></td>
                                     <td><?php echo $row['fld_user_ID']; ?></td>
-
-                                    <td><?php echo ($row['fld_quiz_ID'] == 1) ? 'Bipolar Questionnaire' : 'Anxiety Questionnaire'; ?></td>
+                                    <td><?php echo $newID['fld_username']; ?></td>
+                                    
                                     <td><?php echo $date; ?></td>
                                     <td><?php echo $time; ?></td>
                                     <td class="text-center">

@@ -217,7 +217,7 @@ if (isset($_POST['update'])) {
                                 <td><?php echo $staff['fld_userID'] ?></td>
                                 <td><?php echo $staff['fld_username'] ?></td>
                                 <td><?php echo $staff['fld_email'] ?></td>
-                                <td><?php echo $staff['fld_password'] ?></td>
+                                <td><?php echo str_repeat('*', strlen($staff['fld_password'])) ?></td>
                                 <td><?php echo $staff['fld_category'] ?></td>
                                 <td><?php echo $staff['fld_contact'] ?></td>
                                 <td>
